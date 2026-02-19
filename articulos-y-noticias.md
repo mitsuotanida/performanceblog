@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Artículos y noticias
 permalink: /articulos-y-noticias/
 ---
