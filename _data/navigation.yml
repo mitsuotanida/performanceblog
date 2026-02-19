@@ -1,11 +1,11 @@
-- title: "Inicio" # Menú principal.
-  url: "/" # Home.
+- title: "Inicio" # Texto que se muestra en el menú.
+  url: "/" # Ruta de la página Home.
 
-- title: "Quiénes somos" # Menú principal.
-  url: "/quienes-somos/" # Página.
+- title: "Quiénes somos" # Texto del menú.
+  url: "/quienes-somos/" # Ruta con slash final.
 
-- title: "Misión y visión" # Menú principal.
-  url: "/mision-vision/" # Página.
+- title: "Misión y visión" # Texto del menú.
+  url: "/mision-vision/" # Ruta con slash final.
 
-- title: "Artículos y noticias" # Menú principal.
-  url: "/articulos-y-noticias/" # Página
+- title: "Artículos y noticias" # Texto del menú.
+  url: "/articulos-y-noticias/" # Ruta con slash final.
