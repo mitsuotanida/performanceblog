@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Misión y visión
 permalink: /mision-vision/
 ---
