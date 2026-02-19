@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    {% include head.html %} <!-- Inserta meta + CSS. -->
-  </head>
+  {% include head.html %}
   <body>
-    {% include header.html %} <!-- Barra superior. -->
-    <main class="container">
-      {{ content }} <!-- Contenido específico de cada página. -->
+    {% include header.html %}
+    <main>
+      {{ content }}
     </main>
-    {% include footer.html %} <!-- Pie de página. -->
+    {% include footer.html %}
   </body>
 </html>
