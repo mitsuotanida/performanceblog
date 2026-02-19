@@ -1,0 +1,11 @@
+- title: "Inicio" # Menú principal.
+  url: "/" # Home.
+
+- title: "Quiénes somos" # Menú principal.
+  url: "/quienes-somos/" # Página.
+
+- title: "Misión y visión" # Menú principal.
+  url: "/mision-vision/" # Página.
+
+- title: "Artículos y noticias" # Menú principal.
+  url: "/articulos-y-noticias/" # Página.
