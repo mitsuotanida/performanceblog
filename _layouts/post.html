@@ -1,10 +1,38 @@
 ---
 layout: default
---- <!-- Usa default como base. -->
+---
 
-<article class="section">
-  <div class="kicker">Artículo</div> <!-- Etiqueta superior. -->
-  <h1>{{ page.title }}</h1> <!-- Título del post. -->
-  <div class="post-meta">{{ page.date | date: "%d %b %Y" }} · {{ page.author | default: "Performance Labs" }}</div> <!-- Meta. -->
-  <div style="margin-top:16px;">{{ content }}</div> <!-- Contenido del post. -->
+<!-- Este es el “molde” para los posts. Usa el layout default como base (header + CSS + footer). -->
+<article class="section post">
+  <header class="post-header">
+    <div class="kicker">Artículo</div>
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d %b %Y" }}
+      </time>
+      · {{ page.author | default: site.author | default: "Performance Labs" }}
+      <!-- Muestra fecha y autor para dar contexto. -->
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+    <!-- Acá se inserta el contenido real del .md del post (lo que vos escribís). -->
+  </div>
+
+  <footer class="post-footer">
+    <div class="post-nav">
+      {% if page.previous %}
+        <a class="btn btn-ghost" href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>
+        <!-- Link al post anterior para navegar. -->
+      {% endif %}
+
+      {% if page.next %}
+        <a class="btn btn-ghost" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
+        <!-- Link al post siguiente para navegar. -->
+      {% endif %}
+    </div>
+  </footer>
 </article>
