@@ -1,0 +1,9 @@
+{% assign p = include.post %} <!-- Guarda el post recibido en una variable simple. -->
+
+<article class="post-card">
+  <div class="post-meta">{{ p.date | date: "%d %b %Y" }} · {{ p.author | default: "Performance Labs" }}</div>
+  <h3 style="margin:10px 0 6px;">
+    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+  </h3>
+  <p class="post-excerpt">{{ p.excerpt | strip_html | truncate: 160 }}</p>
+</article>
