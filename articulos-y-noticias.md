@@ -1,14 +1,11 @@
 ---
-layout: page # Misma estética que Inicio.
-title: Artículos y noticias # Título.
-permalink: /articulos-y-noticias/ # URL.
+layout: page # Usa el layout "page" para verse igual que Inicio.
+title: Artículos y noticias # Título de la página.
+permalink: /articulos-y-noticias/ # URL fija.
 ---
 
-<section class="section">
-  <h2>Artículos</h2>
-  <div class="post-grid">
-    {% for post in site.posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
-  </div>
-</section>
+## Artículos
+
+{% for post in site.posts %}
+  {% include post-card.html post=post %} <!-- Inserta una tarjeta por cada post. -->
+{% endfor %}
