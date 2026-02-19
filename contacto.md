@@ -6,7 +6,7 @@ permalink: /contacto/ # URL.
 
 <p class="lead">Escribime y te respondo. Si querés, también podés proponer tema para un artículo.</p>
 
-<form class="form" action="https://formspree.io/f/TU_ID" method="POST">
+<form class="form" action="https://formspree.io/f/maqddeed" method="POST">
   <div class="field">
     <label for="name">Nombre</label>
     <input id="name" name="name" type="text" required />
