@@ -1,4 +1,6 @@
-<meta charset="utf-8" /> <!-- Permite acentos y caracteres. -->
-<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive. -->
-<title>{{ page.title }} | {{ site.title }}</title> <!-- Título de pestaña. -->
-<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" /> <!-- Carga CSS respetando baseurl. -->
+<head>
+  <meta charset="utf-8"> <!-- Permite acentos y caracteres raros sin romperse -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Hace que se vea bien en celular -->
+  <title>{{ page.title }} | {{ site.title }}</title> <!-- Arma el título de la pestaña usando Jekyll -->
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}"> <!-- Carga el CSS bien en cualquier página -->
+</head>
