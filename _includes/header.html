@@ -1,20 +1,11 @@
 <header class="site-header">
-  <div class="container navbar">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-dot" aria-hidden="true"></span> <!-- Marca visual. -->
-      <div>
-        <span class="brand-title">{{ site.title }}</span> <!-- Nombre del sitio. -->
-        <span class="brand-sub">{{ site.description }}</span> <!-- Bajada. -->
-      </div>
-    </a>
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Performance Labs</a>
 
-    <nav class="nav-links" aria-label="Navegación">
+    <nav class="nav">
       {% for item in site.data.navigation %}
-        <a class="nav-link{% if page.url == item.url %} is-active{% endif %}" href="{{ item.url | relative_url }}">
-          {{ item.title }}
-        </a>
+        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
       {% endfor %}
-      <a class="nav-link nav-cta" href="{{ '/contacto/' | relative_url }}">Contacto</a> <!-- CTA. -->
     </nav>
   </div>
 </header>
