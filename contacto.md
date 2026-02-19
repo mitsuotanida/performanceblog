@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Contacto
-permalink: /contacto/
+layout: page # Misma estética que Inicio.
+title: Contacto # Título.
+permalink: /contacto/ # URL.
 ---
 
 <p class="lead">Escribime y te respondo. Si querés, también podés proponer tema para un artículo.</p>
