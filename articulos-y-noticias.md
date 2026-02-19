@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Artículos y noticias
-permalink: /articulos-y-noticias/
+layout: page # Misma estética que Inicio.
+title: Artículos y noticias # Título.
+permalink: /articulos-y-noticias/ # URL.
 ---
 
 <section class="section">
