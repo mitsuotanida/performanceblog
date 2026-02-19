@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Misión y visión
-permalink: /mision-vision/
+layout: page # Misma estética que Inicio.
+title: Misión y visión # Título.
+permalink: /mision-vision/ # URL.
 ---
 
 ## Misión
