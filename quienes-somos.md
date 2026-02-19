@@ -1,6 +1,6 @@
 ---
-layout: page # Usa página estándar.
-title: Quiénes somos # Título.
+layout: page # Usa el layout "page" para verse igual que Inicio.
+title: Quiénes somos # Título grande de la página.
 permalink: /quienes-somos/ # URL fija.
 ---
 
