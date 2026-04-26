@@ -1,9 +1,11 @@
-title: "Performance Labs" # Nombre del sitio.
-description: "Rendimiento deportivo con ciencia, datos y criterio." # Bajada.
-url: "https://mitsuotanida.github.io" # Tu dominio base.
-baseurl: "/performanceblog" # Nombre del repo.
-timezone: America/Santiago # Zona horaria.
+title: "Performance Labs"
+description: "Rendimiento deportivo con ciencia, datos y criterio."
+url: "https://mitsuotanida.github.io"
+baseurl: "/performanceblog"
+timezone: America/Santiago
 permalink: pretty
 markdown: kramdown
 kramdown:
-  input: GFM # Estilo GitHub.
+  input: GFM
+author: "Performance Labs"
+collections_dir: .
